@@ -1,12 +1,12 @@
 from typing import Tuple
 
-from .base_plotter import BasePlotter
+from ..core.interfaces import IPlotter
 
 import numpy as np
 from matplotlib import pyplot as plt
 
 
-class FrameWeightsPlotter(BasePlotter):
+class FrameWeightsPlotter(IPlotter):
 
     def plot(
         self,

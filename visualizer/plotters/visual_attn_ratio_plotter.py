@@ -1,9 +1,9 @@
-from .base_plotter import BasePlotter
+from ..core.interfaces import IPlotter
 import numpy as np
 from matplotlib import pyplot as plt
 
 
-class VisualAttentionRatioPlotter(BasePlotter):
+class VisualAttentionRatioPlotter(IPlotter):
 
     def plot(
         self,

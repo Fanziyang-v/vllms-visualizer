@@ -1,12 +1,12 @@
 from typing import Optional, Tuple
 
-from .base_plotter import BasePlotter
+from ..core.interfaces import IPlotter
 
 import numpy as np
 from matplotlib import pyplot as plt
 
 
-class AttentionPlotter(BasePlotter):
+class AttentionPlotter(IPlotter):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
